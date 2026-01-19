@@ -58,5 +58,7 @@ int main()
         printf("%d : %d\n",i, arr[i]);
     }
     printf("\n");
+
+    
     return 0;
 }

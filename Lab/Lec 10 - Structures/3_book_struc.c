@@ -21,7 +21,8 @@ int main()
         printf("Enter the price:");
         // fgets(books[i].title,100,stdin);
         scanf("%f",&books[i].price);
-        while (getchar() != '\n');
+        getchar();
+        // while (getchar() != '\n');
     }
     for(int i =0;i<2;i++){
         printf("Title:%s\n",books[i].title);
