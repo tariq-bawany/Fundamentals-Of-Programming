@@ -1,28 +1,26 @@
 #include <stdio.h>
-// Input a sentence and count uppercase letters, lowercase letters, and digits.
-int main()
-{
+int main(){
     // 0 -9 (48 - 57)
     // A -Z (65 - 90)
     // a - z (97 - 122)
-    char arr[] = "MY name is Muhammad Tariq and i am born on 19 march 2005";
-    int i = 0;
-    int lowercase, uppercase, digits;
-    lowercase = uppercase = digits = 0;
-    while (arr[i] != '\0')
+    char arr[100]; // empty array declaration with size of 100 char
+    printf("Enter the sentence:"); // user input
+    fgets(arr,100,stdin);
+    int i = 0; // loop index variable with value 0
+    int lowercase, uppercase, digits; // variabled declaration
+    lowercase = uppercase = digits = 0; // variable assignment with 0
+    while (arr[i] != '\0') // loop iterates till the end of sentence through '\0' (null operator)
     {
-        if (arr[i] >= 97 && arr[i] <= 122)
+        if (arr[i] >= 97 && arr[i] <= 122) // checks for lowercase letters
             lowercase++;
-        else if(arr[i]>=65 && arr[i]<=90)
+        else if(arr[i]>=65 && arr[i]<=90) // checks for uppercase letters
             uppercase++;
-        else if(arr[i]>=48 && arr[i]<=57)
+        else if(arr[i]>=48 && arr[i]<=57) // checks for digits
             digits++;
-
-        i++;
+        i++; // loop index
     }
-    printf("%d\n",digits);
-    printf("%d\n",lowercase);
-    printf("%d\n",uppercase);
-
+    printf("Digits: %d\n",digits); // printing the digits counter
+    printf("Lowercase: %d\n",lowercase);// printing the lowercase counter
+    printf("Uppercase: %d\n",uppercase);// printing the digits counter
     return 0;
 }

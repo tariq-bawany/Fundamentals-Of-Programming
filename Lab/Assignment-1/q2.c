@@ -1,30 +1,24 @@
 #include<stdio.h>
-// Write a function to calculate the average of array elements.
-float getAverage(int* arr, int size);
-
+float getAverage(int* arr, int size); // function prototye
 int main() {
-    int balance[5] = {1, 1, 1, 1, 1};
-    float avg;
-
-    avg = getAverage(balance, 5);
-
-    printf("Average value is: %.2f\n", avg);
-
+    int arr[15]; // empty array declartion
+    float avg; // float avg variable declaration
+    int size  = sizeof(arr) / sizeof(arr[0]); // calculation the size/ lenght of the arr
+    for(int i=0;i<15;i++){
+        arr[i] = i+1; // assigning values to arr, can be changes to user input
+    }
+    avg = getAverage(arr, size);// calling function and storing the returned value in avg
+    printf("Average value is: %.2f\n", avg); // printing the avg value
     return 0;
 }
-
-// Function definition
-float getAverage(int* arr, int size) {
-    int i;
+float getAverage(int* arr, int size) { // Function definition
+    // variable declaration
+    int i; 
     float sum = 0.0;
     float avg;
-// printf("%u\n",arr);
-
     for (i = 0; i < size; ++i) {
-        sum += *(arr+i);
-        
+        sum += *(arr+i); // calculating the sum
     }
-
-    avg = sum / size;
-    return avg;
+    avg = sum / size; // calculating the avg using formula
+    return avg; // returning the avg value
 }

@@ -1,14 +1,15 @@
 #include<stdio.h>
-// Replace all spaces in a string with underscores (_) without using string library functions.
 int main (){
-    char arr[] = "MY name is Muhammad Tariq and i am born on 19 march 2005";
-    int i =0;
-    while (arr[i] != '\0')
+    char arr[100]; // empty array declaration
+    printf("Enter sentence:");
+    fgets(arr,100,stdin); // user input
+    int i =0; // loop index
+    while (arr[i] != '\0') // loop iterates till end of sentence
     {
-        if(arr[i]==32)
-            arr[i] = 95;
-        i++;
+        if(arr[i]==32) // checks for space character with ASCII
+            arr[i] = 95;  // if found replace it with ('_')/ 95 ASCII
+        i++; // loop index
     }
-    printf("%s\n",arr);
+    printf("After replacement with _ : %s\n",arr); // printing the after replacement string array
     return 0;
 }

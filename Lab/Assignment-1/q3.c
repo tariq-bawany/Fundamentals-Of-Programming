@@ -1,20 +1,23 @@
 #include<stdio.h>
-// Write a recursive function to reverse an integer number.
-int rev(int num, int rev);
+int rev(int num, int rev); // function prototype
 int main (){
-    int num = 12345;
-    int reverse = 0;
+    int num ;
+    printf("Enter number:"); // user input for number
+    scanf("%d",&num);
+    // variable declaration and initialization to 0
+    int reverse = 0; 
     int remainder = 0;
-    reverse = rev(num,0);
-    printf("%d\n",reverse);
-    
+    reverse = rev(num,reverse); // calling rev() func and storing the returned value 
+    printf("Reversed number: %d\n",reverse); // printing the reverse variable
     return 0;
 }
-int rev(int num,int reverse){
+int rev(int num,int reverse){ // function definition
     if(num == 0){
-        return reverse;
+        return reverse; // if num ==0 , returned reverse
     }
     else{
-        return rev(num/10,(reverse*10)+(num%10));
+        // if num != 0, calls the function again with arguments (num /10) and ((reverse*10)+(num%10))
+        // this reduces the last digit of the num and storing it in the reverse
+        return rev(num/10,(reverse*10)+(num%10)); // returned the reversed number
     }
 }
