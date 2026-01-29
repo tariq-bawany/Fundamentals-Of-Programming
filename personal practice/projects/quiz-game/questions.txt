@@ -1,0 +1,84 @@
+What is the size of an int in C?
+1 byte
+2 bytes
+4 bytes
+8 bytes
+3
+What character ends every string?
+\n
+\0
+\t
+\s
+2
+The maximum margins can be set in MS Excel are ____________?
+02 (Normal & Wide margins)
+04 (Normal, Wide, Narrow & Moderate)
+03 ( Normal, Wide & Narrow)
+Just one margin
+2
+Which function allows to define names/text in formulas except the use of selection in MS Excel?
+Defined Names
+Create from Selection
+Formulas Bar
+Name Manager
+1
+How to split a single columns’ text into multiple columns?
+Data>>Sort & Filter
+Data>>Text to Columns
+Home>>Fill>>Justify
+Home>>Editing>>Justify
+2
+Which of the following is the common language for Artificial Intelligence?
+Java
+Python
+Lisp
+None of these
+2
+Who is known as the inventor of Artificial Intelligence?
+Classic Babbage
+John McCarthy
+Alan Turing
+None of these
+2
+The amount of data transmitted for a given amount of time is called:
+Noise
+Bandwidth
+Frequency
+None of these
+2
+All operating systems get their high memory initialized from:
+BIOS
+RAM
+ROM
+CPU
+1
+What is a group of cells called in Excel?
+Cell Range
+Workbook
+Margin
+None of these
+1
+In Excel, which is used to perform what if analysis?
+Goal seek
+Solver
+Scenario Manager
+All of above
+4
+The first page of document is ___________?
+First page
+Document
+Cover Page
+None of these
+3
+How are data organized in a spreadsheet ?
+Lines and spaces
+Layers and planes
+Rows and columns
+Height and width
+3
+Another name for a pre programmed formula in excel is ___________?
+Cell
+Graph
+Function
+Range
+3
